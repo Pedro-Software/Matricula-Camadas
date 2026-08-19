@@ -1,0 +1,6 @@
+Onde ficou a validação do formato do texto digitado? Por quê ali?
+A gente deixou essa validação na camada de apresentação, porque é nela que o usuário digita as informações. Então achamos que fazia mais sentido validar ali se ele escreveu no formato certo antes de mandar os dados para a parte de negócio.
+A camada de negócio devolve texto pronto para exibir ou dados? Qual das duas opções o grupo escolheu, e o que isso custa?
+A gente escolheu fazer a camada de negócio devolver dados. Fizemos assim porque queríamos deixar a regra de negócio separada da forma como a mensagem aparece na tela. O lado ruim é que a camada de apresentação fica com um pouco mais de trabalho, porque ela precisa pegar esses dados e montar a mensagem que vai ser mostrada para o usuário.
+Se amanhã o sistema virasse uma API web, quantos arquivos precisariam mudar?
+Nesse caso, a maior mudança seria na parte de apresentação, porque hoje ela funciona pelo terminal. As partes de negócio e persistência poderiam continuar praticamente do mesmo jeito. A ideia seria trocar a forma de entrada e saída, mas reaproveitar as regras que já estão separadas.

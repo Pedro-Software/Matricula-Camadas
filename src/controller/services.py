@@ -1,4 +1,4 @@
-from persistence.database import criar_tabelas, semear
+from src.controller.database import criar_tabelas, semear
 import sqlite3
 from datetime import datetime, timedelta
 

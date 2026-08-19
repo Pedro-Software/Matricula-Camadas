@@ -6,8 +6,8 @@ vista funcional: o problema é que tudo mora no mesmo lugar.
 
 Rodar:  python matricula_monolito.py
 """
-from business.services import matricular, cancelar_expiradas
-from persistence.database import criar_tabelas, semear
+from src.controller.services import matricular, cancelar_expiradas
+from src.controller.database import criar_tabelas, semear
 import sqlite3
 from datetime import datetime, timedelta
 
